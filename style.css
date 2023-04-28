@@ -63,7 +63,9 @@
     width:87px;
 }
 
-.key-caps-shift-enter{
+.key-capslock,
+.key-shift,
+.key-enter{
     width: 83px;
 }
 
@@ -72,10 +74,26 @@
 }
 .keys-additional,
 .key-backspace,
-.key-caps-shift-enter {
+.key-capslock,
+.key-shift,
+.key-enter,
+.key-tab,
+.key-ctrl,
+.key-alt,
+.key-lang,
+.key-up,
+.key-down,
+.key-left,
+.key-right,
+.key-delete {
     color: azure;
     background-color: black;
 }
 .hidden{
     display: none;
+}
+.active {
+    border-radius: 10px;
+    background-color: aqua;
+    color:black
 }
