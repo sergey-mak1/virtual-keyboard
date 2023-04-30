@@ -1,14 +1,27 @@
+document.body.classList.add('body');
+
 const container = document.createElement('div');
 container.classList.add('container');
 document.body.appendChild(container);
+const title = document.createElement('h1');
+title.classList.add('title');
+title.textContent = 'RSS Virtual Keyboard';
+container.appendChild(title);
+const module = document.createElement('div');
+module.classList.add('module');
+container.appendChild(module);
 const textWindow = document.createElement('textarea');
 textWindow.classList.add('text-window');
 textWindow.setAttribute('rows', '50');
 textWindow.setAttribute('cols', '5');
-container.appendChild(textWindow);
+module.appendChild(textWindow);
 const keyboard = document.createElement('div');
 keyboard.classList.add('keyboard');
-container.appendChild(keyboard);
+module.appendChild(keyboard);
+const decription = document.createElement('p');
+decription.classList.add('description');
+decription.textContent = 'Клавиатура создана на Windows.\r\n Переключение языка реализовано кобинацией CTRL+ALT';
+container.appendChild(decription);
 
 const row1 = [
   {
@@ -1132,134 +1145,6 @@ const backspaceKey = document.getElementById('Backspace');
 const deleteKey = document.getElementById('Delete');
 const tabKey = document.getElementById('Tab');
 const enterKey = document.getElementById('Enter');
-const spaceKey = document.getElementById('Space');
-function clickMouse() {
-  keyboardEvent.addEventListener('mousedown', (event) => {
-    if (event.target.classList.contains('key-button')) {
-      event.target.classList.toggle('active');
-      switch (true) {
-        case event.target.getAttribute('id') === capsKey.getAttribute('id'):
-          runCapsLock(event.target);
-          break;
-        case event.target.getAttribute('id') === langKey.getAttribute('id'):
-          changeLanguage(event.target);
-          break;
-        case event.target.getAttribute('id') === tabKey.getAttribute('id'):
-          textWindow.value += '   ';
-
-          break;
-        case event.target.getAttribute('id') === backspaceKey.getAttribute('id'):
-          backSpace();
-          break;
-        case event.target.getAttribute('id') === shiftKeyRight.getAttribute('id'):
-        case event.target.getAttribute('id') === shiftKeyLeft.getAttribute('id'):
-          runShift();
-          break;
-        case event.target.getAttribute('id') === deleteKey.getAttribute('id'):
-          deleteValue();
-          break;
-        case event.target.getAttribute('id') === enterKey.getAttribute('id'):
-          textWindow.value += '\n';
-          break;
-        case event.target.getAttribute('id') === altKeyLeft.getAttribute('id'):
-        case event.target.getAttribute('id') === ctrlKeyLeft.getAttribute('id'):
-        case event.target.getAttribute('id') === altKeyRight.getAttribute('id'):
-        case event.target.getAttribute('id') === ctrlKeyRight.getAttribute('id'):
-          break;
-        default:
-          textWindow.value += event.target.innerHTML;
-          break;
-      }
-    }
-  });
-  keyboardEvent.addEventListener('mouseup', (event) => {
-    textWindow.focus();
-    if (event.target.classList.contains('key-button')) {
-      switch (true) {
-        case event.target.getAttribute('id') === capsKey.getAttribute('id'):
-          break;
-        case event.target.getAttribute('id') === shiftKeyRight.getAttribute('id'):
-        case event.target.getAttribute('id') === shiftKeyLeft.getAttribute('id'):
-          noRunShift();
-          event.target.classList.remove('active');
-          break;
-        default:
-          event.target.classList.remove('active');
-          break;
-      }
-    }
-  });
-}
-
-function clickKeyboard() {
-  document.addEventListener('keydown', (event) => {
-    allKeys.forEach((button) => {
-      if (event.code === button.getAttribute('id')) {
-        button.classList.toggle('active');
-        switch (true) {
-          case button.getAttribute('id') === capsKey.getAttribute('id'):
-            runCapsLock(button);
-            break;
-          case button.getAttribute('id') === shiftKeyLeft.getAttribute('id'):
-          case button.getAttribute('id') === shiftKeyRight.getAttribute('id'):
-            runShift();
-            break;
-          case button.getAttribute('id') === backspaceKey.getAttribute('id'):
-            backSpace();
-            break;
-          case button.getAttribute('id') === deleteKey.getAttribute('id'):
-            deleteValue();
-            break;
-          case button.getAttribute('id') === tabKey.getAttribute('id'):
-            textWindow.value += '   ';
-            break;
-          case button.getAttribute('id') === enterKey.getAttribute('id'):
-            textWindow.value += '\n';
-            break;
-          case button.getAttribute('id') === altKeyLeft.getAttribute('id'):
-          case button.getAttribute('id') === ctrlKeyLeft.getAttribute('id'):
-          case button.getAttribute('id') === altKeyRight.getAttribute('id'):
-          case button.getAttribute('id') === ctrlKeyRight.getAttribute('id'):
-            break;
-
-          default:
-            textWindow.value += button.innerHTML;
-            break;
-        }
-      }
-    });
-    event.preventDefault();
-  });
-  document.addEventListener('keyup', (event) => {
-    allKeys.forEach((button) => {
-      textWindow.focus();
-      if (event.code === button.getAttribute('id')) {
-        switch (true) {
-          case button.getAttribute('id') === capsKey.getAttribute('id'):
-            break;
-          case button.getAttribute('id') === shiftKeyLeft.getAttribute('id'):
-          case button.getAttribute('id') === shiftKeyRight.getAttribute('id'):
-            noRunShift();
-            button.classList.remove('active');
-            break;
-          default:
-            button.classList.remove('active');
-            break;
-        }
-      }
-    });
-  });
-}
-keyboardEvent.addEventListener('mouseout', (event) => {
-  allKeys.forEach((el) => {
-    if (el.getAttribute('id') !== capsKey.getAttribute('id')) {
-      el.classList.remove('active');
-    }
-  });
-});
-document.addEventListener('keyup', ctrlAlt, false);
-document.addEventListener('keyup', altCtrl, false);
-
 function runCapsLock(event) {
   if (event.classList.contains('active')) {
     if (event.classList.contains('rus')) {
@@ -1383,6 +1268,133 @@ function altCtrl(event) {
     changeLanguage(langKey);
   }
 }
+function clickMouse() {
+  keyboardEvent.addEventListener('mousedown', (event) => {
+    if (event.target.classList.contains('key-button')) {
+      event.target.classList.toggle('active');
+      switch (true) {
+        case event.target.getAttribute('id') === capsKey.getAttribute('id'):
+          runCapsLock(event.target);
+          break;
+        case event.target.getAttribute('id') === langKey.getAttribute('id'):
+          changeLanguage(event.target);
+          break;
+        case event.target.getAttribute('id') === tabKey.getAttribute('id'):
+          textWindow.value += '   ';
+
+          break;
+        case event.target.getAttribute('id') === backspaceKey.getAttribute('id'):
+          backSpace();
+          break;
+        case event.target.getAttribute('id') === shiftKeyRight.getAttribute('id'):
+        case event.target.getAttribute('id') === shiftKeyLeft.getAttribute('id'):
+          runShift();
+          break;
+        case event.target.getAttribute('id') === deleteKey.getAttribute('id'):
+          deleteValue();
+          break;
+        case event.target.getAttribute('id') === enterKey.getAttribute('id'):
+          textWindow.value += '\n';
+          break;
+        case event.target.getAttribute('id') === altKeyLeft.getAttribute('id'):
+        case event.target.getAttribute('id') === ctrlKeyLeft.getAttribute('id'):
+        case event.target.getAttribute('id') === altKeyRight.getAttribute('id'):
+        case event.target.getAttribute('id') === ctrlKeyRight.getAttribute('id'):
+          break;
+        default:
+          textWindow.value += event.target.innerHTML;
+          break;
+      }
+    }
+  });
+  keyboardEvent.addEventListener('mouseup', (event) => {
+    textWindow.focus();
+    if (event.target.classList.contains('key-button')) {
+      switch (true) {
+        case event.target.getAttribute('id') === capsKey.getAttribute('id'):
+          break;
+        case event.target.getAttribute('id') === shiftKeyRight.getAttribute('id'):
+        case event.target.getAttribute('id') === shiftKeyLeft.getAttribute('id'):
+          noRunShift();
+          event.target.classList.remove('active');
+          break;
+        default:
+          event.target.classList.remove('active');
+          break;
+      }
+    }
+  });
+}
+
+function clickKeyboard() {
+  document.addEventListener('keydown', (event) => {
+    allKeys.forEach((button) => {
+      if (event.code === button.getAttribute('id')) {
+        button.classList.toggle('active');
+        switch (true) {
+          case button.getAttribute('id') === capsKey.getAttribute('id'):
+            runCapsLock(button);
+            break;
+          case button.getAttribute('id') === shiftKeyLeft.getAttribute('id'):
+          case button.getAttribute('id') === shiftKeyRight.getAttribute('id'):
+            runShift();
+            break;
+          case button.getAttribute('id') === backspaceKey.getAttribute('id'):
+            backSpace();
+            break;
+          case button.getAttribute('id') === deleteKey.getAttribute('id'):
+            deleteValue();
+            break;
+          case button.getAttribute('id') === tabKey.getAttribute('id'):
+            textWindow.value += '   ';
+            break;
+          case button.getAttribute('id') === enterKey.getAttribute('id'):
+            textWindow.value += '\n';
+            break;
+          case button.getAttribute('id') === altKeyLeft.getAttribute('id'):
+          case button.getAttribute('id') === ctrlKeyLeft.getAttribute('id'):
+          case button.getAttribute('id') === altKeyRight.getAttribute('id'):
+          case button.getAttribute('id') === ctrlKeyRight.getAttribute('id'):
+            break;
+
+          default:
+            textWindow.value += button.innerHTML;
+            break;
+        }
+      }
+    });
+    event.preventDefault();
+  });
+  document.addEventListener('keyup', (event) => {
+    allKeys.forEach((button) => {
+      textWindow.focus();
+      if (event.code === button.getAttribute('id')) {
+        switch (true) {
+          case button.getAttribute('id') === capsKey.getAttribute('id'):
+            break;
+          case button.getAttribute('id') === shiftKeyLeft.getAttribute('id'):
+          case button.getAttribute('id') === shiftKeyRight.getAttribute('id'):
+            noRunShift();
+            button.classList.remove('active');
+            break;
+          default:
+            button.classList.remove('active');
+            break;
+        }
+      }
+    });
+  });
+}
+keyboardEvent.addEventListener('mouseout', () => {
+  allKeys.forEach((el) => {
+    if (el.getAttribute('id') !== capsKey.getAttribute('id')) {
+      el.classList.remove('active');
+    }
+  });
+});
+document.addEventListener('keyup', ctrlAlt, false);
+document.addEventListener('keyup', altCtrl, false);
+
 clickMouse();
 clickKeyboard();
 
