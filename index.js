@@ -13,6 +13,7 @@ container.appendChild(keyboard);
 const row1 = [
   {
     name: 'acute',
+    code: 'Backquote',
     en: {
       lowerCase: '`',
       upperCase: '~',
@@ -28,6 +29,7 @@ const row1 = [
   },
   {
     name: 'key1',
+    code: 'Digit1',
     en: {
       lowerCase: '1',
       upperCase: '!',
@@ -43,6 +45,7 @@ const row1 = [
   },
   {
     name: 'key2',
+    code: 'Digit2',
     en: {
       lowerCase: '2',
       upperCase: '@',
@@ -58,6 +61,7 @@ const row1 = [
   },
   {
     name: 'key3',
+    code: 'Digit3',
     en: {
       lowerCase: '3',
       upperCase: '#',
@@ -73,6 +77,7 @@ const row1 = [
   },
   {
     name: 'key4',
+    code: 'Digit4',
     en: {
       lowerCase: '4',
       upperCase: '$',
@@ -88,6 +93,7 @@ const row1 = [
   },
   {
     name: 'key5',
+    code: 'Digit5',
     en: {
       lowerCase: '5',
       upperCase: '%',
@@ -103,6 +109,7 @@ const row1 = [
   },
   {
     name: 'key6',
+    code: 'Digit6',
     en: {
       lowerCase: '6',
       upperCase: '^',
@@ -118,6 +125,7 @@ const row1 = [
   },
   {
     name: 'key7',
+    code: 'Digit7',
     en: {
       lowerCase: '7',
       upperCase: '&',
@@ -133,6 +141,7 @@ const row1 = [
   },
   {
     name: 'key8',
+    code: 'Digit8',
     en: {
       lowerCase: '8',
       upperCase: '&',
@@ -148,6 +157,7 @@ const row1 = [
   },
   {
     name: 'key9',
+    code: 'Digit9',
     en: {
       lowerCase: '9',
       upperCase: '(',
@@ -163,6 +173,7 @@ const row1 = [
   },
   {
     name: 'key0',
+    code: 'Digit0',
     en: {
       lowerCase: '0',
       upperCase: ')',
@@ -178,6 +189,7 @@ const row1 = [
   },
   {
     name: 'minus',
+    code: 'Minus',
     en: {
       lowerCase: '-',
       upperCase: '_',
@@ -193,6 +205,7 @@ const row1 = [
   },
   {
     name: 'equally',
+    code: 'Equal',
     en: {
       lowerCase: '=',
       upperCase: '+',
@@ -208,6 +221,7 @@ const row1 = [
   },
   {
     name: 'backspace',
+    code: 'Backspace',
     en: {
       lowerCase: 'Backspace',
       upperCase: 'Backspace',
@@ -226,6 +240,7 @@ const row1 = [
 const row2 = [
   {
     name: 'tab',
+    code: 'Tab',
     en: {
       lowerCase: 'Tab',
       upperCase: 'Tab',
@@ -241,6 +256,7 @@ const row2 = [
   },
   {
     name: 'keyQ',
+    code: 'KeyQ',
     en: {
       lowerCase: 'q',
       upperCase: 'Q',
@@ -256,6 +272,7 @@ const row2 = [
   },
   {
     name: 'keyW',
+    code: 'KeyW',
     en: {
       lowerCase: 'w',
       upperCase: 'W',
@@ -271,6 +288,7 @@ const row2 = [
   },
   {
     name: 'keyE',
+    code: 'KeyE',
     en: {
       lowerCase: 'e',
       upperCase: 'E',
@@ -286,6 +304,7 @@ const row2 = [
   },
   {
     name: 'keyR',
+    code: 'KeyR',
     en: {
       lowerCase: 'r',
       upperCase: 'R',
@@ -301,6 +320,7 @@ const row2 = [
   },
   {
     name: 'keyT',
+    code: 'KeyT',
     en: {
       lowerCase: 't',
       upperCase: 'T',
@@ -316,6 +336,7 @@ const row2 = [
   },
   {
     name: 'keyY',
+    code: 'KeyY',
     en: {
       lowerCase: 'y',
       upperCase: 'Y',
@@ -331,6 +352,7 @@ const row2 = [
   },
   {
     name: 'keyU',
+    code: 'KeyU',
     en: {
       lowerCase: 'u',
       upperCase: 'U',
@@ -346,6 +368,7 @@ const row2 = [
   },
   {
     name: 'keyI',
+    code: 'KeyI',
     en: {
       lowerCase: 'i',
       upperCase: 'I',
@@ -361,6 +384,7 @@ const row2 = [
   },
   {
     name: 'keyO',
+    code: 'KeyO',
     en: {
       lowerCase: 'o',
       upperCase: 'O',
@@ -376,6 +400,7 @@ const row2 = [
   },
   {
     name: 'keyP',
+    code: 'KeyP',
     en: {
       lowerCase: 'p',
       upperCase: 'P',
@@ -391,6 +416,7 @@ const row2 = [
   },
   {
     name: 'leftSqwareBracket',
+    code: 'BracketLeft',
     en: {
       lowerCase: '[',
       upperCase: '{',
@@ -406,6 +432,7 @@ const row2 = [
   },
   {
     name: 'rightSqwareBracket',
+    code: 'BracketRight',
     en: {
       lowerCase: ']',
       upperCase: '}',
@@ -421,6 +448,7 @@ const row2 = [
   },
   {
     name: 'backslash',
+    code: 'Backslash',
     en: {
       lowerCase: '&#92;',
       upperCase: '/;',
@@ -436,6 +464,7 @@ const row2 = [
   },
   {
     name: 'delete',
+    code: 'Delete',
     en: {
       lowerCase: 'Del',
       upperCase: 'Del',
@@ -454,6 +483,7 @@ const row2 = [
 const row3 = [
   {
     name: 'capsLock',
+    code: 'CapsLock',
     en: {
       lowerCase: 'CapsLock',
       upperCase: 'CapsLock',
@@ -469,6 +499,7 @@ const row3 = [
   },
   {
     name: 'keyA',
+    code: 'KeyA',
     en: {
       lowerCase: 'a',
       upperCase: 'A',
@@ -484,6 +515,7 @@ const row3 = [
   },
   {
     name: 'keyS',
+    code: 'KeyS',
     en: {
       lowerCase: 's',
       upperCase: 'S',
@@ -499,6 +531,7 @@ const row3 = [
   },
   {
     name: 'keyD',
+    code: 'KeyD',
     en: {
       lowerCase: 'd',
       upperCase: 'D',
@@ -514,6 +547,7 @@ const row3 = [
   },
   {
     name: 'keyF',
+    code: 'KeyF',
     en: {
       lowerCase: 'f',
       upperCase: 'F',
@@ -529,6 +563,7 @@ const row3 = [
   },
   {
     name: 'keyG',
+    code: 'KeyG',
     en: {
       lowerCase: 'g',
       upperCase: 'G',
@@ -544,6 +579,7 @@ const row3 = [
   },
   {
     name: 'keyH',
+    code: 'KeyH',
     en: {
       lowerCase: 'h',
       upperCase: 'H',
@@ -559,6 +595,7 @@ const row3 = [
   },
   {
     name: 'keyJ',
+    code: 'KeyJ',
     en: {
       lowerCase: 'j',
       upperCase: 'J',
@@ -574,6 +611,7 @@ const row3 = [
   },
   {
     name: 'keyK',
+    code: 'KeyK',
     en: {
       lowerCase: 'k',
       upperCase: 'K',
@@ -589,6 +627,7 @@ const row3 = [
   },
   {
     name: 'keyL',
+    code: 'KeyL',
     en: {
       lowerCase: 'l',
       upperCase: 'L',
@@ -604,6 +643,7 @@ const row3 = [
   },
   {
     name: 'semicolon',
+    code: 'Semicolon',
     en: {
       lowerCase: ';',
       upperCase: ':',
@@ -619,6 +659,7 @@ const row3 = [
   },
   {
     name: 'apostrophe',
+    code: 'Quote',
     en: {
       lowerCase: '&#8242;',
       upperCase: '"',
@@ -634,6 +675,7 @@ const row3 = [
   },
   {
     name: 'enter',
+    code: 'Enter',
     en: {
       lowerCase: 'Enter',
       upperCase: 'Enter',
@@ -650,6 +692,7 @@ const row3 = [
 const row4 = [
   {
     name: 'leftShift',
+    code: 'ShiftLeft',
     en: {
       lowerCase: 'Shift',
       upperCase: 'Shift',
@@ -665,6 +708,7 @@ const row4 = [
   },
   {
     name: 'keyZ',
+    code: 'KeyZ',
     en: {
       lowerCase: 'z',
       upperCase: 'Z',
@@ -680,6 +724,7 @@ const row4 = [
   },
   {
     name: 'keyX',
+    code: 'KeyX',
     en: {
       lowerCase: 'x',
       upperCase: 'X',
@@ -695,6 +740,7 @@ const row4 = [
   },
   {
     name: 'keyC',
+    code: 'KeyC',
     en: {
       lowerCase: 'c',
       upperCase: 'C',
@@ -710,6 +756,7 @@ const row4 = [
   },
   {
     name: 'keyV',
+    code: 'KeyV',
     en: {
       lowerCase: 'v',
       upperCase: 'V',
@@ -725,6 +772,7 @@ const row4 = [
   },
   {
     name: 'keyB',
+    code: 'KeyB',
     en: {
       lowerCase: 'b',
       upperCase: 'B',
@@ -740,6 +788,7 @@ const row4 = [
   },
   {
     name: 'keyN',
+    code: 'KeyN',
     en: {
       lowerCase: 'n',
       upperCase: 'N',
@@ -755,6 +804,7 @@ const row4 = [
   },
   {
     name: 'keyM',
+    code: 'KeyM',
     en: {
       lowerCase: 'm',
       upperCase: 'M',
@@ -770,6 +820,7 @@ const row4 = [
   },
   {
     name: 'comma',
+    code: 'Comma',
     en: {
       lowerCase: ',',
       upperCase: '<',
@@ -785,6 +836,7 @@ const row4 = [
   },
   {
     name: 'dot',
+    code: 'Period',
     en: {
       lowerCase: '.',
       upperCase: '>',
@@ -800,6 +852,7 @@ const row4 = [
   },
   {
     name: 'slash',
+    code: 'Slash',
     en: {
       lowerCase: '/',
       upperCase: '?',
@@ -815,6 +868,7 @@ const row4 = [
   },
   {
     name: 'keyUp',
+    code: 'ArrowUp',
     en: {
       lowerCase: '&#9650;',
       upperCase: '&#9650;',
@@ -830,6 +884,7 @@ const row4 = [
   },
   {
     name: 'rightShift',
+    code: 'ShiftRight',
     en: {
       lowerCase: 'Shift',
       upperCase: 'Shift',
@@ -847,6 +902,7 @@ const row4 = [
 const row5 = [
   {
     name: 'leftCtrl',
+    code: 'ControlLeft',
     en: {
       lowerCase: 'Ctrl',
       upperCase: 'Ctrl',
@@ -862,6 +918,7 @@ const row5 = [
   },
   {
     name: 'language',
+    code: 'Language',
     en: {
       lowerCase: '&#127760; EN',
       upperCase: '&#127760; EN',
@@ -877,6 +934,7 @@ const row5 = [
   },
   {
     name: 'leftAlt',
+    code: 'AltLeft',
     en: {
       lowerCase: 'Alt',
       upperCase: 'Alt',
@@ -892,6 +950,7 @@ const row5 = [
   },
   {
     name: 'space',
+    code: 'Space',
     en: {
       lowerCase: ' ',
       upperCase: ' ',
@@ -907,6 +966,7 @@ const row5 = [
   },
   {
     name: 'rightAlt',
+    code: 'AltRight',
     en: {
       lowerCase: 'Alt',
       upperCase: 'Alt',
@@ -922,6 +982,7 @@ const row5 = [
   },
   {
     name: 'keyLeft',
+    code: 'ArrowLeft',
     en: {
       lowerCase: '&#9664;',
       upperCase: '&#9664;',
@@ -937,6 +998,7 @@ const row5 = [
   },
   {
     name: 'keyDown',
+    code: 'ArrowDown',
     en: {
       lowerCase: '&#9660;',
       upperCase: '&#9660;',
@@ -952,6 +1014,7 @@ const row5 = [
   },
   {
     name: 'keyRight',
+    code: 'ArrowRight',
     en: {
       lowerCase: '&#9654',
       upperCase: '&#9654',
@@ -967,6 +1030,7 @@ const row5 = [
   },
   {
     name: 'rightCtrl',
+    code: 'ControlRight',
     en: {
       lowerCase: 'Ctrl',
       upperCase: 'Ctrl',
@@ -988,6 +1052,7 @@ function createRow(numRow) {
   numRow.forEach((el) => {
     const keyBtn = document.createElement('button');
     keyBtn.classList.add('key-button');
+    keyBtn.setAttribute('id', el.code);
     switch (el.name) {
       case 'acute':
         keyBtn.classList.add('key-acute');
@@ -997,7 +1062,6 @@ function createRow(numRow) {
         break;
       case 'capsLock':
         keyBtn.classList.add('key-capslock');
-        keyBtn.setAttribute('id', 'key-caps');
         break;
       case 'leftShift':
       case 'rightShift':
@@ -1052,89 +1116,56 @@ createRow(row2);
 createRow(row3);
 createRow(row4);
 createRow(row5);
-
+textWindow.focus();
 const rows = [...row1, ...row2, ...row3, ...row4, ...row5];
 const keyboardEvent = document.querySelector('.keyboard');
 const allKeys = document.querySelectorAll('.key-button');
-const capsKey = document.querySelector('.key-capslock');
-const langKey = document.querySelector('.key-lang');
-function clickKeyboard() {
+const capsKey = document.getElementById('CapsLock');
+const langKey = document.getElementById('Language');
+const shiftKeyLeft = document.getElementById('ShiftLeft');
+const shiftKeyRight = document.getElementById('ShiftRight');
+const altKeyLeft = document.getElementById('AltLeft');
+const ctrlKeyLeft = document.getElementById('ControlLeft');
+const altKeyRight = document.getElementById('AltRight');
+const ctrlKeyRight = document.getElementById('ControlRight');
+const backspaceKey = document.getElementById('Backspace');
+const deleteKey = document.getElementById('Delete');
+const tabKey = document.getElementById('Tab');
+const enterKey = document.getElementById('Enter');
+const spaceKey = document.getElementById('Space');
+function clickMouse() {
   keyboardEvent.addEventListener('mousedown', (event) => {
     if (event.target.classList.contains('key-button')) {
       event.target.classList.toggle('active');
-      const eventClass = event.target.classList;
       switch (true) {
-        case eventClass.contains('key-capslock'):
-          if (event.target.classList.contains('active')) {
-            if (event.target.classList.contains('rus')) {
-              allKeys.forEach((keyBtn, index) => {
-                keyBtn.innerHTML = rows[index].rus.capsLock;
-              });
-            } else {
-              allKeys.forEach((keyBtn, index) => {
-                keyBtn.innerHTML = rows[index].en.capsLock;
-              });
-            }
-          } else if (event.target.classList.contains('rus')) {
-            allKeys.forEach((keyBtn, index) => {
-              keyBtn.innerHTML = rows[index].rus.lowerCase;
-            });
-          } else {
-            allKeys.forEach((keyBtn, index) => {
-              keyBtn.innerHTML = rows[index].en.lowerCase;
-            });
-          }
+        case event.target.getAttribute('id') === capsKey.getAttribute('id'):
+          runCapsLock(event.target);
           break;
-        case eventClass.contains('key-lang'):
-          allKeys.forEach((keyBtn, index) => {
-            if (!capsKey.classList.contains('active')) {
-              if (!event.target.classList.contains('rus')) {
-                keyBtn.innerHTML = rows[index].rus.lowerCase;
-                keyBtn.classList.add('rus');
-              } else {
-                keyBtn.classList.remove('rus');
-                keyBtn.innerHTML = rows[index].en.lowerCase;
-              }
-            } else if (!event.target.classList.contains('rus')) {
-              keyBtn.innerHTML = rows[index].rus.capsLock;
-              keyBtn.classList.add('rus');
-            } else {
-              keyBtn.classList.remove('rus');
-              keyBtn.innerHTML = rows[index].en.capsLock;
-            }
-          });
+        case event.target.getAttribute('id') === langKey.getAttribute('id'):
+          changeLanguage(event.target);
           break;
-        case eventClass.contains('key-tab'):
+        case event.target.getAttribute('id') === tabKey.getAttribute('id'):
           textWindow.value += '   ';
 
           break;
-        case eventClass.contains('key-backspace'):
+        case event.target.getAttribute('id') === backspaceKey.getAttribute('id'):
           backSpace();
           break;
-        case eventClass.contains('key-shift'):
-          allKeys.forEach((keyBtn, index) => {
-            if (!capsKey.classList.contains('active')) {
-              if (!langKey.classList.contains('rus')) {
-                keyBtn.innerHTML = rows[index].en.upperCase;
-              } else {
-                keyBtn.innerHTML = rows[index].rus.upperCase;
-              }
-            } else if (!langKey.classList.contains('rus')) {
-              keyBtn.innerHTML = rows[index].en.capsShift;
-            } else {
-              keyBtn.innerHTML = rows[index].rus.capsShift;
-            }
-          });
+        case event.target.getAttribute('id') === shiftKeyRight.getAttribute('id'):
+        case event.target.getAttribute('id') === shiftKeyLeft.getAttribute('id'):
+          runShift();
           break;
-        case eventClass.contains('key-delete'):
+        case event.target.getAttribute('id') === deleteKey.getAttribute('id'):
           deleteValue();
           break;
-        case eventClass.contains('key-enter'):
+        case event.target.getAttribute('id') === enterKey.getAttribute('id'):
           textWindow.value += '\n';
           break;
-        case eventClass.contains('key-left'):
+        case event.target.getAttribute('id') === altKeyLeft.getAttribute('id'):
+        case event.target.getAttribute('id') === ctrlKeyLeft.getAttribute('id'):
+        case event.target.getAttribute('id') === altKeyRight.getAttribute('id'):
+        case event.target.getAttribute('id') === ctrlKeyRight.getAttribute('id'):
           break;
-
         default:
           textWindow.value += event.target.innerHTML;
           break;
@@ -1142,25 +1173,14 @@ function clickKeyboard() {
     }
   });
   keyboardEvent.addEventListener('mouseup', (event) => {
+    textWindow.focus();
     if (event.target.classList.contains('key-button')) {
-      const eventClass = event.target.classList;
       switch (true) {
-        case eventClass.contains('key-capslock'):
+        case event.target.getAttribute('id') === capsKey.getAttribute('id'):
           break;
-        case eventClass.contains('key-shift'):
-          allKeys.forEach((keyBtn, index) => {
-            if (!capsKey.classList.contains('active')) {
-              if (!langKey.classList.contains('rus')) {
-                keyBtn.innerHTML = rows[index].en.lowerCase;
-              } else {
-                keyBtn.innerHTML = rows[index].rus.lowerCase;
-              }
-            } else if (!langKey.classList.contains('rus')) {
-              keyBtn.innerHTML = rows[index].en.capsLock;
-            } else {
-              keyBtn.innerHTML = rows[index].rus.capsLock;
-            }
-          });
+        case event.target.getAttribute('id') === shiftKeyRight.getAttribute('id'):
+        case event.target.getAttribute('id') === shiftKeyLeft.getAttribute('id'):
+          noRunShift();
           event.target.classList.remove('active');
           break;
         default:
@@ -1170,6 +1190,149 @@ function clickKeyboard() {
     }
   });
 }
+
+function clickKeyboard() {
+  document.addEventListener('keydown', (event) => {
+    allKeys.forEach((button) => {
+      if (event.code === button.getAttribute('id')) {
+        button.classList.toggle('active');
+        switch (true) {
+          case button.getAttribute('id') === capsKey.getAttribute('id'):
+            runCapsLock(button);
+            break;
+          case button.getAttribute('id') === shiftKeyLeft.getAttribute('id'):
+          case button.getAttribute('id') === shiftKeyRight.getAttribute('id'):
+            runShift();
+            break;
+          case button.getAttribute('id') === backspaceKey.getAttribute('id'):
+            backSpace();
+            break;
+          case button.getAttribute('id') === deleteKey.getAttribute('id'):
+            deleteValue();
+            break;
+          case button.getAttribute('id') === tabKey.getAttribute('id'):
+            textWindow.value += '   ';
+            break;
+          case button.getAttribute('id') === enterKey.getAttribute('id'):
+            textWindow.value += '\n';
+            break;
+          case button.getAttribute('id') === altKeyLeft.getAttribute('id'):
+          case button.getAttribute('id') === ctrlKeyLeft.getAttribute('id'):
+          case button.getAttribute('id') === altKeyRight.getAttribute('id'):
+          case button.getAttribute('id') === ctrlKeyRight.getAttribute('id'):
+            break;
+
+          default:
+            textWindow.value += button.innerHTML;
+            break;
+        }
+      }
+    });
+    event.preventDefault();
+  });
+  document.addEventListener('keyup', (event) => {
+    allKeys.forEach((button) => {
+      textWindow.focus();
+      if (event.code === button.getAttribute('id')) {
+        switch (true) {
+          case button.getAttribute('id') === capsKey.getAttribute('id'):
+            break;
+          case button.getAttribute('id') === shiftKeyLeft.getAttribute('id'):
+          case button.getAttribute('id') === shiftKeyRight.getAttribute('id'):
+            noRunShift();
+            button.classList.remove('active');
+            break;
+          default:
+            button.classList.remove('active');
+            break;
+        }
+      }
+    });
+  });
+}
+keyboardEvent.addEventListener('mouseout', (event) => {
+  allKeys.forEach((el) => {
+    if (el.getAttribute('id') !== capsKey.getAttribute('id')) {
+      el.classList.remove('active');
+    }
+  });
+});
+document.addEventListener('keyup', ctrlAlt, false);
+document.addEventListener('keyup', altCtrl, false);
+
+function runCapsLock(event) {
+  if (event.classList.contains('active')) {
+    if (event.classList.contains('rus')) {
+      allKeys.forEach((keyBtn, index) => {
+        keyBtn.innerHTML = rows[index].rus.capsLock;
+      });
+    } else {
+      allKeys.forEach((keyBtn, index) => {
+        keyBtn.innerHTML = rows[index].en.capsLock;
+      });
+    }
+  } else if (event.classList.contains('rus')) {
+    allKeys.forEach((keyBtn, index) => {
+      keyBtn.innerHTML = rows[index].rus.lowerCase;
+    });
+  } else {
+    allKeys.forEach((keyBtn, index) => {
+      keyBtn.innerHTML = rows[index].en.lowerCase;
+    });
+  }
+}
+
+function changeLanguage(event) {
+  allKeys.forEach((keyBtn, index) => {
+    if (!capsKey.classList.contains('active')) {
+      if (!event.classList.contains('rus')) {
+        keyBtn.innerHTML = rows[index].rus.lowerCase;
+        keyBtn.classList.add('rus');
+      } else {
+        keyBtn.classList.remove('rus');
+        keyBtn.innerHTML = rows[index].en.lowerCase;
+      }
+    } else if (!event.classList.contains('rus')) {
+      keyBtn.innerHTML = rows[index].rus.capsLock;
+      keyBtn.classList.add('rus');
+    } else {
+      keyBtn.classList.remove('rus');
+      keyBtn.innerHTML = rows[index].en.capsLock;
+    }
+  });
+}
+function runShift() {
+  allKeys.forEach((keyBtn, index) => {
+    if (!capsKey.classList.contains('active')) {
+      if (!langKey.classList.contains('rus')) {
+        keyBtn.innerHTML = rows[index].en.upperCase;
+      } else {
+        keyBtn.innerHTML = rows[index].rus.upperCase;
+      }
+    } else if (!langKey.classList.contains('rus')) {
+      keyBtn.innerHTML = rows[index].en.capsShift;
+    } else {
+      keyBtn.innerHTML = rows[index].rus.capsShift;
+    }
+  });
+}
+
+function noRunShift() {
+  allKeys.forEach((keyBtn, index) => {
+    if (!capsKey.classList.contains('active')) {
+      if (!langKey.classList.contains('rus')) {
+        keyBtn.innerHTML = rows[index].en.lowerCase;
+      } else {
+        keyBtn.innerHTML = rows[index].rus.lowerCase;
+      }
+    } else if (!langKey.classList.contains('rus')) {
+      keyBtn.innerHTML = rows[index].en.capsLock;
+    } else {
+      keyBtn.innerHTML = rows[index].rus.capsLock;
+    }
+  });
+}
+
 function backSpace() {
   const start = textWindow.selectionStart;
   const end = textWindow.selectionEnd;
@@ -1178,7 +1341,7 @@ function backSpace() {
   const afterText = textWindow.value.substring(end, textLength);
   if (start === end) {
     textWindow.value = textWindow.value.substring(0, start - 1)
-    + textWindow.value.substring(end, textLength);
+            + textWindow.value.substring(end, textLength);
     textWindow.focus();
     textWindow.selectionStart = start - 1;
     textWindow.selectionEnd = start - 1;
@@ -1197,7 +1360,7 @@ function deleteValue() {
   const afterText = textWindow.value.substring(end, textLength);
   if (start === end) {
     textWindow.value = textWindow.value.substring(0, start)
-        + textWindow.value.substring(end + 1, textLength);
+            + textWindow.value.substring(end + 1, textLength);
     textWindow.focus();
     textWindow.selectionStart = start;
     textWindow.selectionEnd = start;
@@ -1208,4 +1371,34 @@ function deleteValue() {
     textWindow.selectionEnd = start;
   }
 }
+
+function ctrlAlt(event) {
+  if (event.ctrlKey && event.code === 'AltLeft') {
+    changeLanguage(langKey);
+  }
+}
+
+function altCtrl(event) {
+  if (event.altKey && event.code === 'ControlLeft') {
+    changeLanguage(langKey);
+  }
+}
+clickMouse();
 clickKeyboard();
+
+function setLocalStorageLanguage() {
+  localStorage.setItem('.lang-key', langKey.classList);
+}
+window.addEventListener('beforeunload', setLocalStorageLanguage);
+
+function getLocalStorageLanguage() {
+  langKey.classList = localStorage.getItem('.lang-key');
+
+  allKeys.forEach((keyBtn, index) => {
+    if (langKey.classList.contains('rus')) {
+      keyBtn.innerHTML = rows[index].rus.lowerCase;
+      keyBtn.classList.add('rus');
+    }
+  });
+}
+window.addEventListener('load', getLocalStorageLanguage);
