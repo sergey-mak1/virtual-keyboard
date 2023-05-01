@@ -1147,27 +1147,32 @@ const enterKey = document.getElementById('Enter');
 function runCapsLock(event) {
   if (event.classList.contains('active')) {
     if (event.classList.contains('rus')) {
-      allKeys.forEach((keyBtn, index) => {
+      allKeys.forEach((button, index) => {
+        const keyBtn = button;
         keyBtn.innerHTML = rows[index].rus.capsLock;
       });
     } else {
-      allKeys.forEach((keyBtn, index) => {
+      allKeys.forEach((button, index) => {
+        const keyBtn = button;
         keyBtn.innerHTML = rows[index].en.capsLock;
       });
     }
   } else if (event.classList.contains('rus')) {
-    allKeys.forEach((keyBtn, index) => {
+    allKeys.forEach((button, index) => {
+      const keyBtn = button;
       keyBtn.innerHTML = rows[index].rus.lowerCase;
     });
   } else {
-    allKeys.forEach((keyBtn, index) => {
+    allKeys.forEach((button, index) => {
+      const keyBtn = button;
       keyBtn.innerHTML = rows[index].en.lowerCase;
     });
   }
 }
 
 function changeLanguage(event) {
-  allKeys.forEach((keyBtn, index) => {
+  allKeys.forEach((button, index) => {
+    const keyBtn = button;
     if (!capsKey.classList.contains('active')) {
       if (!event.classList.contains('rus')) {
         keyBtn.innerHTML = rows[index].rus.lowerCase;
@@ -1186,7 +1191,8 @@ function changeLanguage(event) {
   });
 }
 function runShift() {
-  allKeys.forEach((keyBtn, index) => {
+  allKeys.forEach((button, index) => {
+    const keyBtn = button;
     if (!capsKey.classList.contains('active')) {
       if (!langKey.classList.contains('rus')) {
         keyBtn.innerHTML = rows[index].en.upperCase;
@@ -1202,7 +1208,8 @@ function runShift() {
 }
 
 function noRunShift() {
-  allKeys.forEach((keyBtn, index) => {
+  allKeys.forEach((button, index) => {
+    const keyBtn = button;
     if (!capsKey.classList.contains('active')) {
       if (!langKey.classList.contains('rus')) {
         keyBtn.innerHTML = rows[index].en.lowerCase;
@@ -1410,7 +1417,8 @@ function getLocalStorageLanguage() {
   if (localStorage.getItem('.lang-key')) {
     langKey.classList = localStorage.getItem('.lang-key');
 
-    allKeys.forEach((keyBtn, index) => {
+    allKeys.forEach((button, index) => {
+      const keyBtn = button;
       if (langKey.classList.contains('rus')) {
         keyBtn.innerHTML = rows[index].rus.lowerCase;
         keyBtn.classList.add('rus');
