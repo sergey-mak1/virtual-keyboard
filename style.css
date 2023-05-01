@@ -3,7 +3,7 @@
 }
 
 .body {
-    background-image: url('../assets/background.jpg');
+    background-image: url('./assets/background.jpg');
     background-size: contain;
     margin: 0;
 }
