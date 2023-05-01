@@ -1408,16 +1408,14 @@ window.addEventListener('beforeunload', setLocalStorageLanguage);
 
 function getLocalStorageLanguage() {
   if (localStorage.getItem('.lang-key')) {
-  langKey.classList = localStorage.getItem('.lang-key');
+    langKey.classList = localStorage.getItem('.lang-key');
 
-  allKeys.forEach((keyBtn, index) => {
-    
+    allKeys.forEach((keyBtn, index) => {
       if (langKey.classList.contains('rus')) {
         keyBtn.innerHTML = rows[index].rus.lowerCase;
         keyBtn.classList.add('rus');
       }
-    
-  });
-}
+    });
+  }
 }
 window.addEventListener('load', getLocalStorageLanguage);
