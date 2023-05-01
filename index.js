@@ -1115,7 +1115,7 @@ function createRow(numRow) {
       case 'keyRight':
         keyBtn.classList.add('key-right');
         break;
-            // no default
+      // no default
     }
     keyBtn.setAttribute('type', 'button');
     keyBtn.innerHTML = el.en.lowerCase;
@@ -1225,7 +1225,7 @@ function backSpace() {
   const afterText = textWindow.value.substring(end, textLength);
   if (start === end) {
     textWindow.value = textWindow.value.substring(0, start - 1)
-            + textWindow.value.substring(end, textLength);
+      + textWindow.value.substring(end, textLength);
     textWindow.focus();
     textWindow.selectionStart = start - 1;
     textWindow.selectionEnd = start - 1;
@@ -1244,7 +1244,7 @@ function deleteValue() {
   const afterText = textWindow.value.substring(end, textLength);
   if (start === end) {
     textWindow.value = textWindow.value.substring(0, start)
-            + textWindow.value.substring(end + 1, textLength);
+      + textWindow.value.substring(end + 1, textLength);
     textWindow.focus();
     textWindow.selectionStart = start;
     textWindow.selectionEnd = start;
@@ -1407,13 +1407,17 @@ function setLocalStorageLanguage() {
 window.addEventListener('beforeunload', setLocalStorageLanguage);
 
 function getLocalStorageLanguage() {
+  if (localStorage.getItem('.lang-key')) {
   langKey.classList = localStorage.getItem('.lang-key');
 
   allKeys.forEach((keyBtn, index) => {
-    if (langKey.classList.contains('rus')) {
-      keyBtn.innerHTML = rows[index].rus.lowerCase;
-      keyBtn.classList.add('rus');
-    }
+    
+      if (langKey.classList.contains('rus')) {
+        keyBtn.innerHTML = rows[index].rus.lowerCase;
+        keyBtn.classList.add('rus');
+      }
+    
   });
+}
 }
 window.addEventListener('load', getLocalStorageLanguage);
