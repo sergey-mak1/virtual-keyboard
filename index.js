@@ -20,7 +20,7 @@ keyboard.classList.add('keyboard');
 module.appendChild(keyboard);
 const decription = document.createElement('p');
 decription.classList.add('description');
-decription.textContent = 'Клавиатура создана на Windows.\r\n Переключение языка реализовано кобинацией CTRL+ALT';
+decription.textContent = 'Клавиатура создана на Windows.\r\n Переключение языка реализовано кобинацией левых CTRL+ALT';
 container.appendChild(decription);
 
 const row1 = [
@@ -1058,7 +1058,6 @@ const row5 = [
     },
   },
 ];
-
 function createRow(numRow) {
   const row = document.createElement('div');
   row.classList.add('row');
@@ -1325,7 +1324,17 @@ function clickMouse() {
     }
   });
 }
-
+keyboardEvent.addEventListener('mouseout', () => {
+  allKeys.forEach((el) => {
+    if (el.getAttribute('id') !== capsKey.getAttribute('id')) {
+      el.classList.remove('active');
+    }
+    if (el.getAttribute('id') === shiftKeyLeft.getAttribute('id') || el.getAttribute('id') === shiftKeyRight.getAttribute('id')) {
+      el.classList.remove('active');
+      noRunShift();
+    }
+  });
+});
 function clickKeyboard() {
   document.addEventListener('keydown', (event) => {
     allKeys.forEach((button) => {
@@ -1385,13 +1394,7 @@ function clickKeyboard() {
     });
   });
 }
-keyboardEvent.addEventListener('mouseout', () => {
-  allKeys.forEach((el) => {
-    if (el.getAttribute('id') !== capsKey.getAttribute('id')) {
-      el.classList.remove('active');
-    }
-  });
-});
+
 document.addEventListener('keyup', ctrlAlt, false);
 document.addEventListener('keyup', altCtrl, false);
 
